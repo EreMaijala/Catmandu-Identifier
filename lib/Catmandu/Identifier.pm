@@ -36,6 +36,10 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 =item * L<Catmandu::Fix::memento_find>
 
+=item * L<Catmandu::Fix::ip_to_host>
+
+=item * L<Catmandu::Fix::host_to_ip>
+
 =item * L<Catmandu::Fix::orcid_bio>
 
 =item * L<Catmandu::Fix::orcid_find>

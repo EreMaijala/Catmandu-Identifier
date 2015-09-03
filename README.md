@@ -15,6 +15,8 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 - [Catmandu::Fix::issn](https://metacpan.org/pod/Catmandu::Fix::issn)
 - [Catmandu::Fix::uuid](https://metacpan.org/pod/Catmandu::Fix::uuid)
 - [Catmandu::Fix::memento\_find](https://metacpan.org/pod/Catmandu::Fix::memento_find)
+- [Catmandu::Fix::ip\_to\_host](https://metacpan.org/pod/Catmandu::Fix::ip_to_host)
+- [Catmandu::Fix::host\_to\_ip](https://metacpan.org/pod/Catmandu::Fix::host_to_ip)
 - [Catmandu::Fix::orcid\_bio](https://metacpan.org/pod/Catmandu::Fix::orcid_bio)
 - [Catmandu::Fix::orcid\_find](https://metacpan.org/pod/Catmandu::Fix::orcid_find)
 - [Catmandu::Fix::orcid\_profile](https://metacpan.org/pod/Catmandu::Fix::orcid_profile)
