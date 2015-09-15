@@ -1,19 +1,16 @@
-# This script will extract all the isbn numbers from the MARC file, check their validity and
-# transform them to ISBN13 where possible.
+# This script will extract all the isbn numbers from the MARC file and check their validity 
 #
 # Run this example as:
 # catmandu convert MARC --type ALEPHSEQ to YAML --fix ex/marc_sample.fix < ex/marc_sample.txt
 
-# map the isbn to an array of hashes
-marc_map(020a,isbn.$append.txt)
+do marc_each()
+  marc_map(020a,isbn)
 
-do list(path => isbn) 
-	if is_valid_isbn(txt)
-		add_field(valid,1)
-		isbn13(txt)
-	else
-		add_field(valid,0)
-	end
+  if is_valid_isbn(isbn)
+  	marc_set(020x,"ok")
+  else
+    marc_set(020x,"not ok")
+  end
+
+  remove_field(isbn)
 end
-
-retain(isbn)

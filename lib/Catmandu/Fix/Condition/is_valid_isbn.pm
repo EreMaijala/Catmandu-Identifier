@@ -26,6 +26,20 @@ Catmandu::Fix::Condition::is_valid_isbn - condition on validity of isbn numbers
      ...
    end
 
+   # Example how this can be used to check the validity of ISBN numbers in a MARC file
+   # Run as: catmandu convert MARC TO MARC --fix marc.fix  < data.mrc
+   do marc_each()
+      marc_map(020a,isbn)
+
+      if is_valid_isbn(isbn)
+      	marc_set(020x,"ok")
+      else
+        marc_set(020x,"not ok")
+      end
+
+      remove_field(isbn)
+   end
+
 =head1 SEE ALSO
 
 L<Catmandu::Fix>
