@@ -12,6 +12,7 @@ on 'test', sub {
 
 requires 'Catmandu', '>=0.94';
 requires 'Catmandu::OCLC', 0;
+requires 'Catmandu::MARC', '>=0.211';
 requires 'Business::ISSN', '0.91';
 requires 'Business::ISBN', '2.09';
 requires 'Data::UUID',0;
