@@ -21,6 +21,8 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 - [Catmandu::Fix::orcid\_find](https://metacpan.org/pod/Catmandu::Fix::orcid_find)
 - [Catmandu::Fix::orcid\_profile](https://metacpan.org/pod/Catmandu::Fix::orcid_profile)
 - [Catmandu::Fix::orcid\_works](https://metacpan.org/pod/Catmandu::Fix::orcid_works)
+- [Catmandu::Fix::viaf\_read](https://metacpan.org/pod/Catmandu::Fix::viaf_read) (from the Catmandu::OCLC package)
+- [Catmandu::Fix::xID](https://metacpan.org/pod/Catmandu::Fix::xID)  (from the Catmandu::OCLC package)
 - [Catmandu::Fix::Condition::is\_valid\_isbn](https://metacpan.org/pod/Catmandu::Fix::Condition::is_valid_isbn)
 - [Catmandu::Fix::Condition::is\_valid\_issn](https://metacpan.org/pod/Catmandu::Fix::Condition::is_valid_issn)
 - [Catmandu::Fix::Condition::is\_uri](https://metacpan.org/pod/Catmandu::Fix::Condition::is_uri)
@@ -47,4 +49,4 @@ it under the same terms as Perl itself.
 
 # SEE ALSO
 
-[Catmandu::Fix](https://metacpan.org/pod/Catmandu::Fix)
+[Catmandu::Fix](https://metacpan.org/pod/Catmandu::Fix), [Catmandu::OCLC](https://metacpan.org/pod/Catmandu::OCLC)

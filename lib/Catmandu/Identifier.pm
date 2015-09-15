@@ -48,6 +48,10 @@ Catmandu::Identifier - Namespace for handling/fixing identifier, e.g. ISBN, ISSN
 
 =item * L<Catmandu::Fix::orcid_works>
 
+=item * L<Catmandu::Fix::viaf_read> (from the Catmandu::OCLC package)
+
+=item * L<Catmandu::Fix::xID>  (from the Catmandu::OCLC package)
+
 =item * L<Catmandu::Fix::Condition::is_valid_isbn>
 
 =item * L<Catmandu::Fix::Condition::is_valid_issn>
@@ -85,6 +89,6 @@ it under the same terms as Perl itself.
 
 =head1 SEE ALSO
 
-L<Catmandu::Fix>
+L<Catmandu::Fix>, L<Catmandu::OCLC>
 
 =cut
