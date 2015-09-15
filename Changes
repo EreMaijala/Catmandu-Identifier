@@ -2,6 +2,7 @@ Revision history for Catmandu-Identifier
 
 {{$NEXT}}
     - new fixes ip_to_host , host_to_ip
+    - adding cross reference to the viaf_read and xID OCLC fixes
     
 0.04  2015-09-02 08:35:06 CEST
     - new fixes orcid_bio, orcid_find, orcid_profile, orcid_works
