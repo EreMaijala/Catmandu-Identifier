@@ -36,4 +36,10 @@ is_deeply
     {test => 'fail' },
     "is invalid";
 
+is_deeply
+    $cond->fix({issn => "128718s()!@"}),
+    {issn => "128718s()!@" , test => 'fail' },
+    "is invalid";
+
+
 done_testing;

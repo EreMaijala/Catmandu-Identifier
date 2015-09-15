@@ -36,4 +36,9 @@ is_deeply
     {test => 'fail' },
     "is invalid";
 
+is_deeply
+    $cond->fix({isbn => '2371 jh ()!@ sdakdhj'}),
+    {isbn => '2371 jh ()!@ sdakdhj', test => 'fail' },
+    "is invalid";
+
 done_testing;

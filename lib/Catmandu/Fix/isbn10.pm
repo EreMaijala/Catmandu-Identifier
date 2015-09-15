@@ -25,7 +25,9 @@ Catmandu::Fix::isbn10 - normalize the isbn value of a key in 10-digit form
   # Normalize the ISBN value of isbn_field.
   # e.g. isbn_field => '1565922573'
 
-  isbn10(isbn_field) # isbn_field => '1-56592-257-3'
+  if is_valid_isbn(isbn_field)
+  	isbn10(isbn_field) # isbn_field => '1-56592-257-3'
+  end
 
 =head1 SEE ALSO
 

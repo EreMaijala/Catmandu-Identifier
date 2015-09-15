@@ -23,7 +23,9 @@ Catmandu::Fix::issn - normalize the issn value for a given key
   # Normalize the ISSN value of issn_field.
   # e.g. issn_field => '1553667x'
 
-  issn(issn_field) # issn_field => '1553-667X'
+  if is_valid_issn(issn_field)
+  	issn(issn_field) # issn_field => '1553-667X'
+  end
 
 =head1 SEE ALSO
 

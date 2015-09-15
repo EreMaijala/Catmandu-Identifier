@@ -25,8 +25,10 @@ Catmandu::Fix::isbn13 - normalize the isbn value of a key in 13-digit form
   # Normalize the ISBN value of isbn_field.
   # e.g. isbn_field => '1565922573'
 
-  isbn13(isbn_field) # isbn_field => '978-1-56592-257-0'
-
+  if is_valid_isbn(isbn_field)
+  	isbn13(isbn_field) # isbn_field => '978-1-56592-257-0'
+  end
+  
 =head1 SEE ALSO
 
 L<Catmandu::Fix>, L<Catmandu::Fix::isbn10>
