@@ -4,7 +4,7 @@
       "Vitali Peil"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 5.034, Dist::Milla version v1.0.15, CPAN::Meta::Converter version 2.150001",
+   "generated_by" : "Dist::Zilla version 5.039, Dist::Milla version v1.0.15, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -26,7 +26,7 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "Module::Build::Tiny" : "0.039"
+            "Module::Build::Tiny" : "0.034"
          }
       },
       "develop" : {
@@ -38,8 +38,11 @@
       "runtime" : {
          "requires" : {
             "Business::ISBN" : "2.09",
+            "Business::ISBN10" : "0",
+            "Business::ISBN13" : "0",
             "Business::ISSN" : "0.91",
             "Catmandu" : "0.94",
+            "Catmandu::MARC" : "0.211",
             "Catmandu::OCLC" : "0",
             "Data::UUID" : "0",
             "Data::Validate::URI" : "0",
